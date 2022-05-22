@@ -19,13 +19,19 @@
     width: var(--default-layout-width);
 }
 
-.logo {
+.search,
+.search-result {
+    width: 346px;
+}
+
+.search-tittle {
+    padding: 5px 12px;
+    color: rgba(22, 24, 35, 0.5);
 }
 
 .search {
     position: relative;
     display: flex;
-    width: 346px;
     height: var(--search-height);
     background-color: rgba(22, 24, 35, 0.06);
     border-radius: var(--search-border-radius);
@@ -58,10 +64,6 @@
     &:focus-within {
         border-color: rgba(22, 24, 35, 0.2);
     }
-}
-
-.clear {
-    background-color: #acacb0;
 }
 
 .clear,
