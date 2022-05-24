@@ -4,14 +4,32 @@ import images from '~/assets/images';
 import Tippy from '@tippyjs/react/headless';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleXmark, faPlus } from '@fortawesome/free-solid-svg-icons';
+import { faCircleXmark, faEllipsisVertical, faLanguage, faPlus } from '@fortawesome/free-solid-svg-icons';
 import { faMagnifyingGlass, faSpinner } from '@fortawesome/free-solid-svg-icons';
 import { useEffect, useState } from 'react';
 import { Wrapper as PopperWrapper } from '~/components/Popper';
 import Button from '~/components/Button';
 import AccountsItem from '~/components/AccountsItem';
+import Menu from '~/components/Popper/Menu';
+import { faCircleQuestion, faKeyboard } from '@fortawesome/free-regular-svg-icons';
 
 const cx = classNames.bind(styles);
+
+const MENU_ITEMS = [
+    {
+        icon: <FontAwesomeIcon icon={faLanguage} />,
+        titile: 'English',
+    },
+    {
+        icon: <FontAwesomeIcon icon={faCircleQuestion} />,
+        titile: 'Feedback and help',
+        to: '/feedback',
+    },
+    {
+        icon: <FontAwesomeIcon icon={faKeyboard} />,
+        titile: 'Keyboard shortcuts',
+    },
+];
 
 function Header() {
     const [searchResult, setSearchResult] = useState([]);
@@ -57,6 +75,11 @@ function Header() {
                         Upload
                     </Button>
                     <Button primary>Log in</Button>
+                    <Menu items={MENU_ITEMS}>
+                        <button className={cx('more-btn')}>
+                            <FontAwesomeIcon icon={faEllipsisVertical} />
+                        </button>
+                    </Menu>
                 </div>
             </div>
         </header>
