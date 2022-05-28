@@ -1,8 +1,8 @@
 import classNames from 'classnames/bind';
 import styles from './Header.module.scss';
 import images from '~/assets/images';
-import HeadlessTippy from '@tippyjs/react/headless';
 import Tippy from '@tippyjs/react';
+import HeadlessTippy from '@tippyjs/react/headless';
 import 'tippy.js/dist/tippy.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -21,7 +21,9 @@ import { Wrapper as PopperWrapper } from '~/components/Popper';
 import Button from '~/components/Button';
 import AccountsItem from '~/components/AccountsItem';
 import Menu from '~/components/Popper/Menu';
-import { faCircleQuestion, faEnvelope, faKeyboard, faPaperPlane, faUser } from '@fortawesome/free-regular-svg-icons';
+import { faCircleQuestion, faKeyboard, faUser } from '@fortawesome/free-regular-svg-icons';
+import { InboxIcon, MessageIcon } from '~/components/Icon';
+import Image from '~/components/Image';
 
 const cx = classNames.bind(styles);
 
@@ -79,7 +81,7 @@ function Header() {
         {
             icon: <FontAwesomeIcon icon={faUser} />,
             titile: 'View profile',
-            to: '/profile',
+            to: '/@melody',
         },
         {
             icon: <FontAwesomeIcon icon={faCoins} />,
@@ -103,9 +105,7 @@ function Header() {
     return (
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
-                <div className={cx('logo')}>
-                    <img src={images.logo} alt="Tiktok"></img>
-                </div>
+                <img src={images.logo} alt="Tiktok"></img>
                 <HeadlessTippy
                     interactive
                     visible={searchResult.length > 0}
@@ -131,20 +131,22 @@ function Header() {
                         </button>
                     </div>
                 </HeadlessTippy>
+
                 <div className={cx('action')}>
                     <Button text plusIcon={<FontAwesomeIcon icon={faPlus} />}>
                         Upload
                     </Button>
                     {userCurrent ? (
                         <>
-                            <Tippy delay={[0, 200]} content="Message">
-                                <button>
-                                    <FontAwesomeIcon className={cx('actions-btn')} icon={faPaperPlane} />
+                            <Tippy content="Message">
+                                <button className={cx('actions-btn')}>
+                                    <MessageIcon />
                                 </button>
                             </Tippy>
-                            <Tippy delay={[0, 200]} content="Inbox">
-                                <button>
-                                    <FontAwesomeIcon className={cx('actions-btn')} icon={faEnvelope} />
+
+                            <Tippy content="Inbox">
+                                <button className={cx('actions-btn')}>
+                                    <InboxIcon />
                                 </button>
                             </Tippy>
                         </>
@@ -155,10 +157,11 @@ function Header() {
                     )}
                     <Menu items={userCurrent ? userMenu : MENU_ITEMS} onChange={handleMenuChange}>
                         {userCurrent ? (
-                            <img
-                                src="https://p16-sign-va.tiktokcdn.com/musically-maliva-obj/1662345059033093~c5_100x100.jpeg?x-expires=1653717600&x-signature=pfRKYgkTCM3w57%2BKjjiL6SWiexw%3D"
+                            <Image
                                 className={cx('user-avarta')}
+                                src="https://p16-sign-va.tiktokcdn.com/musically-maliva-obj/1662345059033093~c5_100x100.jpeg?x-expires=1653717600&x-signature=pfRKYgkTCM3w57%2BKjjiL6SWiexw%3D"
                                 alt="meloddymarks"
+                                fallback="https://genk.mediacdn.vn/2020/1/7/photo-1-1578368300431366420427.jpg"
                             />
                         ) : (
                             <>

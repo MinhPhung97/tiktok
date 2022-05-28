@@ -100,9 +100,16 @@
     align-items: center;
 }
 
+.more-btn {
+    cursor: pointer;
+    margin-left: 16px;
+    font-size: 2rem;
+    padding: 4px 8px;
+    background-color: transparent;
+}
+
 .actions-btn {
     background-color: #fff;
-    font-size: 2.2rem;
     padding: 5px 12px;
     cursor: pointer;
 }
@@ -114,12 +121,4 @@
     border-radius: 50%;
     margin-left: 16px;
     cursor: pointer;
-}
-
-.more-btn {
-    cursor: pointer;
-    margin-left: 16px;
-    font-size: 2rem;
-    padding: 4px 8px;
-    background-color: transparent;
 }
