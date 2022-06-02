@@ -51,14 +51,17 @@ function Search() {
         setShowResult(false);
     };
 
-    const handleCheckInputSearch = (e) => {
-        // let value = e.target.value;
-        // if (value.trim() === '') {
-        //     value = '';
-        // } else {
-        //     setSearchValue(value);
-        // }
-        setSearchValue(e.target.value);
+    const handleChange = (e) => {
+        const searchValue = e.target.value;
+
+        if (!searchValue.startsWith(' ')) {
+            setSearchValue(searchValue);
+        }
+    };
+
+    const handleClickSearchBtn = (e) => {
+        inputRef.current.blur();
+        e.preventDefault();
     };
 
     return (
@@ -83,16 +86,18 @@ function Search() {
                     value={searchValue}
                     placeholder="Search accounts and videos"
                     spellCheck={false}
-                    onChange={handleCheckInputSearch}
+                    onChange={handleChange}
                     onFocus={() => setShowResult(true)}
                 />
+
                 {!!searchValue && !loading && (
                     <button className={cx('clear')} onClick={handleClear}>
                         <FontAwesomeIcon icon={faCircleXmark} />
                     </button>
                 )}
                 {loading && <FontAwesomeIcon className={cx('loading')} icon={faSpinner} />}
-                <button className={cx('search-btn')}>
+
+                <button className={cx('search-btn')} onMouseDown={handleClickSearchBtn}>
                     <SearchIcon />
                 </button>
             </div>
