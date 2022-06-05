@@ -40,6 +40,116 @@ const MENU_ITEMS = [
                     code: 'vi',
                     titile: 'Tiếng Việt',
                 },
+                {
+                    type: 'language',
+                    code: 'en',
+                    titile: 'English',
+                },
+                {
+                    type: 'language',
+                    code: 'vi',
+                    titile: 'Tiếng Việt',
+                },
+                {
+                    type: 'language',
+                    code: 'en',
+                    titile: 'English',
+                },
+                {
+                    type: 'language',
+                    code: 'vi',
+                    titile: 'Tiếng Việt',
+                },
+                {
+                    type: 'language',
+                    code: 'en',
+                    titile: 'English',
+                },
+                {
+                    type: 'language',
+                    code: 'vi',
+                    titile: 'Tiếng Việt',
+                },
+                {
+                    type: 'language',
+                    code: 'en',
+                    titile: 'English',
+                },
+                {
+                    type: 'language',
+                    code: 'vi',
+                    titile: 'Tiếng Việt',
+                },
+                {
+                    type: 'language',
+                    code: 'en',
+                    titile: 'English',
+                },
+                {
+                    type: 'language',
+                    code: 'vi',
+                    titile: 'Tiếng Việt',
+                },
+                {
+                    type: 'language',
+                    code: 'en',
+                    titile: 'English',
+                },
+                {
+                    type: 'language',
+                    code: 'vi',
+                    titile: 'Tiếng Việt',
+                },
+                {
+                    type: 'language',
+                    code: 'en',
+                    titile: 'English',
+                },
+                {
+                    type: 'language',
+                    code: 'vi',
+                    titile: 'Tiếng Việt',
+                },
+                {
+                    type: 'language',
+                    code: 'en',
+                    titile: 'English',
+                },
+                {
+                    type: 'language',
+                    code: 'vi',
+                    titile: 'Tiếng Việt',
+                },
+                {
+                    type: 'language',
+                    code: 'en',
+                    titile: 'English',
+                },
+                {
+                    type: 'language',
+                    code: 'vi',
+                    titile: 'Tiếng Việt',
+                },
+                {
+                    type: 'language',
+                    code: 'en',
+                    titile: 'English',
+                },
+                {
+                    type: 'language',
+                    code: 'vi',
+                    titile: 'Tiếng Việt',
+                },
+                {
+                    type: 'language',
+                    code: 'en',
+                    titile: 'English',
+                },
+                {
+                    type: 'language',
+                    code: 'vi',
+                    titile: 'Tiếng Việt',
+                },
             ],
         },
     },
