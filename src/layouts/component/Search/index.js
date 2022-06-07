@@ -6,7 +6,7 @@ import styles from './Search.module.scss';
 import { useEffect, useRef, useState } from 'react';
 import 'tippy.js/dist/tippy.css';
 
-import * as searchService from '~/apiService/searchService';
+import * as searchService from '~/services/searchService';
 import AccountsItem from '~/components/AccountsItem';
 import { SearchIcon } from '~/components/Icon';
 import { Wrapper as PopperWrapper } from '~/components/Popper';
