@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/tiktok/static/css/main.aef5d980.css",
+    "main.js": "/tiktok/static/js/main.aa9a457b.js",
+    "static/js/787.4c9d15e8.chunk.js": "/tiktok/static/js/787.4c9d15e8.chunk.js",
+    "static/media/ProximaNova-Semibold.woff2": "/tiktok/static/media/ProximaNova-Semibold.db7972dbe0b808f96bae.woff2",
+    "static/media/sofiapro-bold.woff": "/tiktok/static/media/sofiapro-bold.086ed00f3060992f2938.woff",
+    "static/media/Proxima-Nova-Bold.woff": "/tiktok/static/media/Proxima-Nova-Bold.6cd7dcaa6293ecf61e80.woff",
+    "static/media/Proxima-Nova-Regular.woff2": "/tiktok/static/media/Proxima-Nova-Regular.6c83037ae28747e6d774.woff2",
+    "static/media/logo.svg": "/tiktok/static/media/logo.9242eaf578cf355461b56f50abac8e26.svg",
+    "index.html": "/tiktok/index.html",
+    "main.aef5d980.css.map": "/tiktok/static/css/main.aef5d980.css.map",
+    "main.aa9a457b.js.map": "/tiktok/static/js/main.aa9a457b.js.map",
+    "787.4c9d15e8.chunk.js.map": "/tiktok/static/js/787.4c9d15e8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aef5d980.css",
+    "static/js/main.aa9a457b.js"
+  ]
+}
